@@ -1,7 +1,7 @@
 # ARQ-Simulator[Computer Networks]
 This project is a Network based Simulator of Go-Back-N ARQ (Automatic Repeat Request) which is an NACK based error control protocol used in the TCP layer of computer networks
 
-## TCP
+## Go-Back-N ARQ
 In the TCP layer of the OSI network model, packets of data are exchanged between a Sender and a Receiver over the computer network. There are error control protocols that are used between the Sender and the Receiver, so that the Receiver can let the Sender know, when packets are lost or have timed out. There are numerous types of such error control protocols. The most common ones are ACK-based, i.e for each packet sent by the Sender, the Receiver sends an ACK(acknowledgement) of the packet to the Sender. This lets the sender know that the packet sent was received and the Sender can send the next packet. However, this required each packet to be ACK'd by the Receiver and hence increases the network congestion. 
 
 There is another such set of error control protocols which are NACK based, i.e the Receiver sends NACK(negative-acknowledgement) for packets which have been lost or timed out. Hence this reduces the number of NACK packets flowing from the Receiver to the Sender. There are different algorithmic implementation of NACK such as below:
