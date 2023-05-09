@@ -24,7 +24,7 @@ In short, the Sender generates a string of size Y. Sender sends Y packets to the
 ## Running the Simulator
 The Simulator takes in a few variables:
 - failure rate(X): A value based on which the router drops packets
-- size of String(Y): The number of packets to send from the Sender to the Receiver
+- size of string(Y): The number of packets to send from the Sender to the Receiver
 - timeout(timeoutOffset): timeout value on each packet at receiver side, if a packet times out, the receiver realizes that the packet was dropped and sends NACK
 - verbosity(verbose): print console statements. This slows the performance, however helps to understand the code and debug issues.
 
